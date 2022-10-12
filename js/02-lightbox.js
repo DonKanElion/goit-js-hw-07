@@ -27,10 +27,10 @@ const galleryId = document.querySelector("ul.gallery");
 
 // NEW scool
 
-const createImgEl = galleryItems.map(({ preview, original, descreption})  => 
+const createImgEl = galleryItems.map(({ preview, original, description})  => 
 
 `<a class="gallery__item" href="${original}">
-<img class="gallery__image" src="${preview}" alt="${descreption}" />
+<img class="gallery__image" src="${preview}" alt="${description}" />
 </a>`).join('');
 
 galleryId.insertAdjacentHTML("beforeend", createImgEl);
